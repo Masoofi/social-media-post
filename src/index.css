@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+ height: 60px;  
+}
+.header svg {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header .brand {
+  margin-left: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #e7412c;
+  border-radius: 50%;
+  padding: 0 2px;
+  border: 3px solid #fff;
+  color: #fff;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.nav .form-search label {
+  position: absolute;
+  left: -99999999px;
+}
+.nav .form-search input {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.nav .form-search input::-moz-placeholder {
+  font-size: 18px;
+}
+.nav .form-search input::placeholder {
+  font-size: 18px;
+}
+.nav ol {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 50px;
+  margin: 0;
+}
+.nav ol li a {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav ol li a:hover {
+  color: yellow;
+}
+
+body {
+  margin: 130px 0px 0px;
+}
+
+.home {
+  margin-bottom: 50px;
+}
+
+.post {
+  border-bottom: 1px solid gray;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.post h2 {
+  color: black;
+}
+.post h2:hover {
+  color: blue;
+}
+.post small {
+  color: black;
+}
+.post:last-child {
+  border-bottom: none;
+}
+
+.new-post {
+  padding: 10px 20px;
+}
+.new-post .new-post-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  margin-top: 10px;
+}
+.new-post .new-post-form .post-title {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+.new-post .new-post-form .post-title input {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+.new-post .new-post-form .post-body {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+.new-post .new-post-form .post-body textarea {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+.new-post .new-post-form button {
+  padding: 10px 40px;
+  background-color: #2a5699;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-page .btns {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  align-items: center;
+}
+.post-page button {
+  padding: 10px 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.post-page .btn-edit {
+  background-color: gray;
+}
+.post-page .btn-delete {
+  background-color: red;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+}
+.about p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.missing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  height: 80vh;
+}
+.missing-link {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: lightgray;
+  width: 100%;
+  padding: 15px 0px;
+  text-align: center;
+}
